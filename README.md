@@ -3,6 +3,16 @@
 ![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
+
+# may 12, 2019: Added retweet bot function on main script, for any (included self) tweets 
+
+you should make a python script with the following code and save it into TwitterFollowBot folder
+
+from TwitterFollowBot import TwitterBot
+
+my_bot = TwitterBot()
+my_bot.retweet(status_id='message-id')
+
 # Twitter Bot
 
 [![Join the chat at https://gitter.im/rhiever/TwitterFollowBot](https://badges.gitter.im/rhiever/TwitterFollowBot.svg)](https://gitter.im/rhiever/TwitterFollowBot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
