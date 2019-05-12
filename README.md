@@ -4,15 +4,6 @@
 ![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 
 
-# may 12, 2019: Added retweet bot function on main script, for any (included self) tweets 
-
-you should make a python script with the following code and save it into TwitterFollowBot folder
-
-from TwitterFollowBot import TwitterBot
-
-my_bot = TwitterBot()
-my_bot.retweet(status_id='message-id')
-
 # Twitter Bot
 
 [![Join the chat at https://gitter.im/rhiever/TwitterFollowBot](https://badges.gitter.im/rhiever/TwitterFollowBot.svg)](https://gitter.im/rhiever/TwitterFollowBot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -180,6 +171,15 @@ By default, the bot looks up the 100 most recent tweets. You can change this num
     
     my_bot = TwitterBot()
     my_bot.auto_rt("phrase", count=1000)
+    
+#### retweet bot function for any (included self) tweets 
+
+you should make a python script with the following code and save it into TwitterFollowBot folder
+
+    from TwitterFollowBot import TwitterBot
+
+    my_bot = TwitterBot()
+    my_bot.retweet(status_id='message-id')
 
 #### Automatically unfollow any users that have not followed you back
 
